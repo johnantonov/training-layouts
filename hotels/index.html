@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="container header">
         <div class="header__header">
-            <a href="" class="header__logo logo">
-                <img src="./img/logo.svg" alt="Lagoona" class="logo__img">
-            </a>
-            <a href="tel:+74953225448" class="tel header__tel">
-                +7 495 322-54-48
-            </a>
+            <div class="header__left">
+                <a href="" class="header__logo logo">
+                    <img src="./img/logo.svg" alt="Lagoona" class="logo__img">
+                </a>
+                <a href="tel:+74953225448" class="tel header__tel">
+                    +7 495 322-54-48
+                </a>
+            </div>
             <a href="" class="header__lk">
                 Личный кабинет
             </a>
@@ -61,47 +64,7 @@
         </a>
        </nav>
     </header>
-    <main class="container">
-        <section class="special">
-            <h2 class="title special__title">
-                Спецпредложения
-            </h2>
-            <ul class="special__list special__list_float">
-                <li class="special__elem">
-                    <strong class="special__text">
-                        Мальдивские острова
-                    </strong>
-                    <p class="special__price">
-                        От 55 000
-                    </p>
-                    <a href="" class="special__link">
-                        Подробнее
-                    </a>
-                </li>
-                <li class="special__elem">
-                    <strong class="special__text">
-                        Горящий тур на остров Крит
-                    </strong>
-                    <p class="special__price">
-                        От 30 000 
-                    </p>
-                    <a href="" class="special__link">
-                        Подробнее
-                    </a>
-                </li>
-                <li class="special__elem">
-                    <strong class="special__text">
-                        Номера категории люкс
-                    </strong>
-                    <p class="special__price">
-                        От 5 000
-                    </p>
-                    <a href="" class="special__link">
-                        Подробнее
-                    </a>
-                </li>
-            </ul>
-        </section>
+    <main class="">
         <section class="about-us container">
             <h2 class="title about-us__title">
                 О нас
@@ -116,34 +79,38 @@
                 Услуги
             </h2>
             <ul class="services__list">
-                <li class="services__elem">
+                <li class="services__elem services__elem_1">
                     <a href="" class="services__link">
-                        Эксклюзивное обслуживание
+                        Эксклюзивное обслуживание 
+                        <span class="pointer"></span>
                     </a>
                     <p class="services__text">
                         Равным образом постоянный количественный рост и сфера нашей активности
                     </p>
                 </li>
-                <li class="services__elem">
+                <li class="services__elem services__elem_2">
                     <a href="" class="services__link">
-                        Аренда банкетных залов
+                        Аренда банкетных залов 
                     </a>
+                    <span class="pointer"></span>
                     <p class="services__text">
                         Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
                     </p>
                 </li>
-                <li class="services__elem">
-                    <a href="" class="services__link">
-                        Сауны, бассейны, бани, фитнес-залы
+                <li class="services__elem services__elem_3">
+                    <a href="" class="services__link ">
+                        Сауны, бассейны, бани, фитнес-залы 
                     </a>
+                    <span class="pointer"></span>
                     <p class="services__text">
                         Не следует, однако забывать, что начало повседневной работы по формированию позиции
                     </p>
                 </li>
-                <li class="services__elem">
-                    <a href="" class="services__link">
-                        Охраняемые автомобильные стоянки
+                <li class="services__elem services__elem_4">
+                    <a href="" class="services__link ">
+                        Охраняемые автомобильные стоянки 
                     </a>
+                    <span class="pointer"></span>
                     <p class="services__text">
                         Не следует, однако забывать, что начало повседневной работы по формированию позиции
                     </p>
@@ -151,58 +118,64 @@
             </ul>
         </section>
         <section class="plus container">
+            <h2 class="title services__title">
+                Преимущества
+            </h2>
             <ul class="plus__list">
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_1">
                     <p class="plus__text">
                         Идейные соображения высшего порядка,
                         а также постоянный количественный рост
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_2">
                     <p class="plus__text">
                         Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_3">
                     <p class="plus__text">
                         Таким образом реализация плановых заданий играет важную роль для понимания
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_4">
                     <p class="plus__text">
                         Повседневная практика показывает, что сложившаяся структура организации
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_5">
                     <p class="plus__text">
                         Равным образом рамки и место обучения кадров способствует подготовки сотрудника
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_6">
                     <p class="plus__text">
                         Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_7">
                     <p class="plus__text">
                         Повседневная практика показывает, что дальнейшее развитие различных 
                     </p>
                 </li>
-                <li class="plus__elem">
+                <li class="plus__elem plus__elem_8">
                     <p class="plus__text">
                         Значимость этого настолько очевидна, что консультация наших экспертов помогает
                     </p>
                 </li>
             </ul>
         </section>
-        <section class="hotels">
+        <section class="hotels container">
+            <h2 class="title services__title">
+                Размещение
+            </h2>
             <ul class="hotels__list">
-                <li class="hotels__item">
-                    <span>
-                        <small>
+                <li class="hotels__item hotels__item_1">
+                    <span class="hotels__text">
+                        <small class="hotels__small">
                             от
                         </small>
-                        <strong>
+                        <strong class="hotels__strong">
                             4 698
                         </strong>
                         / ночь
@@ -224,7 +197,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_2">
                     <span>
                         <small>
                             от
@@ -251,7 +224,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_3">
                     <span>
                         <small>
                             от
@@ -278,7 +251,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_4">
                     <span>
                         <small>
                             от
@@ -305,7 +278,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_5">
                     <span>
                         <small>
                             от
@@ -332,7 +305,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_6">
                     <span>
                         <small>
                             от
@@ -359,7 +332,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_7">
                     <span>
                         <small>
                             от
@@ -386,7 +359,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__item">
+                <li class="hotels__item hotels__item_8">
                     <span>
                         <small>
                             от
@@ -413,7 +386,7 @@
                         Номера
                     </a>
                 </li>
-                <li class="hotels__other">
+                <li class="hotels__item hotels__item_other">
                     <a href="" class="hotels__other-link">
                         Посмотреть все варианты
                     </a>
