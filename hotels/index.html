@@ -65,6 +65,31 @@
        </nav>
     </header>
     <main class="">
+        <section class="sales container">
+            <h2 class="title sales__title">
+                Спецпредложения
+            </h2>
+            <ul class="sales__list">
+                <li class="sales__item sales__item_left sales__item_1">
+                    <h3 class="item__title item__title_1">Мальдивские острова</h3>
+                    <p class="item__price item__price_1">от 55 000</p>
+                    <a href="" class="item__link item__link_1">Подробнее</a>
+                </li>
+                
+                <li class="sales__item sales__item_left sales__item_2">
+                    <h3 class="item__title item__title_2">Горящий тур на остров Крит</h3>
+                    <p class="item__price item__price_2">от 30 000</p>
+                    <a href="" class="item__link item__link_2">Подробнее</a>
+                </li>
+
+                
+                <li class="sales__item sales__item_left sales__item_3">
+                    <h3 class="item__title item__title_3">Номера категории люкс</h3>
+                    <p class="item__price item__price_3">от 5 000</p>
+                    <a href="" class="item__link item__link_3">Подробнее</a>
+                </li>
+            </ul>
+        </section>
         <section class="about-us container">
             <h2 class="title about-us__title">
                 О нас
@@ -388,15 +413,67 @@
                 </li>
                 <li class="hotels__item hotels__item_other">
                     <a href="" class="hotels__other-link">
-                        Посмотреть все варианты
                     </a>
+                    <span class="hotels__other-text">Посмотреть все варианты</span>
                 </li>
             </ul>
         </section>
+        <section class="want container">
+            <h2 class="title want__title">
+                Хочу тур
+            </h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form want__form">
+                <label class="form__label form__city"> 
+                    <span class="label__title">Город вылета </span>
+                    <select name="city" id="city" class="form__select form__item form__select_city">
+                        <option value="SPB">
+                            Санкт-Петербург
+                        </option>
+                        <option value="EKB">
+                            Екатеринбург
+                        </option>
+                        <option value="MSK">
+                            Москва
+                        </option>
+                    </select>
+                </label>
+                <label class="form__label form__country"> 
+                    <span class="label__title">Страна</span>
+                    <select name="country" id="country" class="form__item form__select form__select_country">
+                        <option value="Australia">
+                            Австралия
+                        </option>
+                        <option value="USA">
+                            США
+                        </option>
+                        <option value="UK">
+                            Великобритания
+                        </option>
+                    </select>
+                </label>
+                <label class="form__label form__date"> 
+                    <span class="label__title">Дата прибытия </span>
+                    <input type="date" value="11" name="date" id="date" class="form__input form__item form__input_date"> 
+                </label>
+                <label class="form__label form__nights"> 
+                    <span class="label__title">Ночей </span>
+                    <input type="number" value="6" name="nights" id="nights" class="form__input form__item form__input_nights">
+                </label>
+                <label class="form__label form__tourists"> 
+                    <span class="label__title">Туристы </span>
+                    <input type="number" value="2" name="tourists" id="tourists" class="form__item form__input form__input_tourists">
+                </label>
+                <button class="btn form__btn">Найти</button>
+            </form>
+         </section>
         <section class="contacts container">
+           <h2 class="title contacts__title">
+            Контакты
+           </h2>
+           <div class="contacts__flexbox">
             <div class="contacts__box">
                 <ul class="contacts__list">
-                    <li class="contacts__adress">
+                    <li class="contacts__item contacts__adress contacts__item_1">
                         <span class="contacts__name">
                             Адрес
                         </span>
@@ -404,7 +481,7 @@
                             Москва, улица Юности, дом 5 строение 4, офис 2
                         </span>
                     </li>
-                    <li class="contacts__tel">
+                    <li class="contacts__item contacts__tel">
                         <span class="contacts__name">
                             Телефоны
                         </span>
@@ -413,7 +490,7 @@
                             <a href="tel:+79999999998" class="tel-link">+7 999 999-99-98</a>
                         </span>
                     </li>
-                    <li class="contacts__email">
+                    <li class="contacts__item contacts__email">
                         <span class="contacts__name">
                             Email
                         </span>
@@ -424,7 +501,7 @@
                             <small class="email-text">по вопросам сотрудничества</small>
                         </span>
                     </li>
-                    <li class="contacts__schedule">
+                    <li class="contacts__item contacts__schedule">
                         <span class="contacts__name">
                             Адрес
                         </span>
@@ -435,8 +512,12 @@
                 </ul>
                 <a href="" class="btn btn__contacts">Построить маршрут</a>
             </div>
-            <div class="contacts__img"></div>
+            <div class="contacts__img">
+                <img src="/img/contacts.jpg" alt="">
+            </div>
+           </div>
         </section>
+       
     </main>
     <footer class="container footer">
         <div class="footer__left">

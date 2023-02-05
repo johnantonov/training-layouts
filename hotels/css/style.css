@@ -1,8 +1,73 @@
+/* open-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v34-latin-300.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/open-sans-v34-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v34-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/open-sans-v34-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-500.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v34-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/open-sans-v34-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
 
 
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 * {
     box-sizing: border-box;
+
+}
+
+*:focus {
+    background-color: rgb(206, 142, 142, 0.4);
+}
+
+
+:root {
+    --btn-color: #CC9933;
 }
 
 body {
@@ -11,6 +76,13 @@ body {
 
 a {
     text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+a:hover {
+    color:#4f2222;
+    border-color: #4f2222;
+    
 }
 
 ul {
@@ -30,7 +102,7 @@ p  {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -39,9 +111,15 @@ p  {
 
 .btn {
     padding: 13px 20px;
-    color: #CC9933;
+    color: var(--btn-color);
     border-radius: 10px;
-    border: 1px solid #CC9933;
+    border: 1px solid var(--btn-color);
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.btn:hover {
+    transform: scaleX(110%) translateY(-10px); 
 }
 
 .title {
@@ -83,7 +161,6 @@ p  {
 
 .header__lk {
     padding-left: 20px;
-    display: inline-block;
     background-image: url(../img/lk.png);
     background-position: left center;
     background-size: auto 100%;
@@ -92,8 +169,7 @@ p  {
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #CC9933;
-
+    color: var(--btn-color);
 }
 
 .header__nav {
@@ -108,6 +184,7 @@ p  {
 
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-right: auto;
 }
@@ -128,8 +205,108 @@ p  {
 }
 
 
-/* SPECIAL */
+/* SALES */ 
 
+
+.sales {
+    margin-bottom: 70px; 
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sales__list {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 600px;
+}
+
+.sales__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(573px);
+    padding: 40px 108px 40px 45px;
+    border-radius: 15px;
+    position: relative;
+   
+
+}
+
+.sales__item_1 {
+    margin-bottom: 24px;
+    margin-right: 24px;
+    background: url(/img/maldiv.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.sales__item_2 {
+    margin-right: 24px;
+    background: url(/img/krit.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 18px;
+}
+
+.sales__item_3 {
+    height: 100%;
+    padding: 212px 229px 40px 45px;
+    background: url(/img/lux.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sales__item_1::after,
+.sales__item_2::after {
+    content: '';
+    background-image: url(/img/darken.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    opacity: 0.5;
+    
+}
+
+.item__title {
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.item__title_3 {
+    min-width: 299px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.item__price {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.item__price_3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.item__link {
+    margin-top: 47px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color:#F0BF5F;
+}
 
 /* ABOUT US */
 
@@ -207,31 +384,9 @@ p  {
     line-height: 40px;
     display: inline;
 
-    color: #CC9933;
+    color: var(--btn-color);
 
 }
-
-
-
-/* .pointer {
-    width: 1px;
-    height: 1px;
-    margin-left: 10px;
-    
-    border: 2px solid #CC9933;
-    transform: rotate(-45deg);
-    
-} */
-
-/* .pointer {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/pointer.png);
-    background-position: center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 
 .services__text {
@@ -458,6 +613,8 @@ p  {
 .hotels__item_other {
     padding: 373px 54px 27px;
     border-radius: 15px;
+    position: relative;
+
 
 
     background-image: url(../img/hotelother.jpg);
@@ -470,7 +627,152 @@ p  {
     font-size: 20px;
     line-height: 40px;
     color: #fff;
-
-    
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
+
+.hotels__other-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* CONTACTS */
+
+
+.contacts__flexbox {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    padding: 45px;
+    background: #FFFFFF;
+    border-radius: 15px;   
+    margin-bottom: 40px;
+}
+
+.contacts__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    padding-bottom: 23px;
+    border-bottom: 2px solid #E9E9E9;    ; 
+}
+
+
+
+.contacts__item {
+    margin-top: 20px;
+}
+
+.contacts__item_1 {
+    margin-top: 0px;
+}
+
+
+
+.contacts__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contacts__value {
+    display: flex;
+    flex-direction: column;
+    width: 229px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+.tel-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+   color: var(--btn-color);
+}
+
+.btn__contacts {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 27px 29.5px;
+}
+
+.email-link {
+    font-weight: 40;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--btn-color);
+}
+
+.email-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#999999;
+}
+
+
+/* FORM want */
+
+
+.want {
+    margin-bottom: 70px;
+    padding: 45px 40px;
+
+    background-color: #E9E9E9;
+    border-radius: 15px;
+}
+
+
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 31px 28px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label__title {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    margin-right: 41px;
+}
+
+.form__select {
+    width: 169px;
+}
+
+.form__input {
+    width: 121px;
+}
+
+.form__item {
+    border: none;
+}
+
+.form__btn {
+    padding: 13px 30px;
+    margin-left: 10px;
+}
+
+
+/* FOOTER */
+
+
