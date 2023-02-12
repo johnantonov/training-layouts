@@ -536,6 +536,8 @@ p  {
 }
 
 .hotels__small {
+    text-transform: capitalize;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
@@ -757,6 +759,10 @@ p  {
 
 .form__select {
     width: 169px;
+}
+
+.form__input:read-write {
+    box-shadow: 0 2px 5px rgb(161, 117, 117);
 }
 
 .form__input {
