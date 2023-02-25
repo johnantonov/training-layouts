@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="choices.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="choices.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+     
+  <script src="just-validate.production.min.js"></script>
+  <script src="inputmask.min.js"></script>
+  
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+   
+  </head>
+  <body>
+    <form action="" class="cb">
+      <label class="">
+        <input type="checkbox" class="checkbox">
+        <span class="checkbox_fake"></span>
+        <span class="cb__name">Лисица</span>
+      </label>
+      <label class="">
+        <input type="checkbox" class="checkbox">
+        <span class="checkbox_fake"></span>
+        <span class="cb__name">Медведь</span>
+      </label>
+      <label class="">
+        <input type="checkbox" class="checkbox">
+        <span class="checkbox_fake"></span>
+        <span class="cb__name">Заяц</span>
+      </label>
+      <label class="">
+      <input type="checkbox" class="checkbox">
+      <span class="checkbox_fake"></span>
+      <span class="cb__name">Жираф</span>
+    </label>
+    <label class="">
+      <input type="checkbox" class="checkbox">
+      <span class="checkbox_fake"></span>
+      <span class="cb__name">Собака</span>
+    </label>
+  </form>
+  
+  <form class="custom-select">
+    <select name="material" id="selCustom" class="selCustom">
+      <option>Материал</option>
+      <option value="древесина">Древесина</option>
+      <option value="Камень">Камень</option>
+      <option value="Пластик">Пластик</option>
+      <option value="Гипс">Гипс</option>
+      <option value="Цемент">Цемент</option>
+      <option value="Гравий">Гравий</option>
+    </select>
+  </form>
+  
+  
+  <div id="map" style="width: 460px; height: 460px"></div>
+  <div data-simplebar class="custom-scroll">
+    <p class="scroll__text">Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+
+    </p>
+  </div>
+
+
+  <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="valid" id="valid-form">
+    <label><input data-valisate-field="name" required type="text" name="name" id="name" class="form-control form__input name" placeholder="Имя*"></label>
+    
+    <label><input data-valisate-field="phone"  required type="tel" id="tel" name="tel" class="form-control form__input" placeholder="Телефон*"></label>
+    
+    <label><input data-valisate-field="email"  required type="email"  name="email" id="email" class="form-control form__input mail" placeholder="E-mail*"></label>
+    
+    <input type="submit" id="submit-btn" name="submit" class="valid__btn submit btn btn-primary" value="Заказать">
+    
+  </form>
+
+
+  <button id="myButton">TT</button>
+
+
+  
+  <div class="box">
+    <p class="some-text">
+      Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+     <span class="help"><svg class="tooltip__img"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
+      </svg></span>
+    </p>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+
+  <script src="index.js"></script>
+</body>
+</html>

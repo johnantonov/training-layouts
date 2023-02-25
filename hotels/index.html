@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -69,26 +70,26 @@
             <h2 class="title sales__title">
                 Спецпредложения
             </h2>
-            <ul class="sales__list">
-                <li class="sales__item sales__item_left sales__item_1">
-                    <h3 class="item__title item__title_1">Мальдивские острова</h3>
-                    <p class="item__price item__price_1">от 55 000</p>
-                    <a href="" class="item__link item__link_1">Подробнее</a>
-                </li>
-                
-                <li class="sales__item sales__item_left sales__item_2">
-                    <h3 class="item__title item__title_2">Горящий тур на остров Крит</h3>
-                    <p class="item__price item__price_2">от 30 000</p>
-                    <a href="" class="item__link item__link_2">Подробнее</a>
-                </li>
-
-                
-                <li class="sales__item sales__item_left sales__item_3">
+            <div class="d-flex flex-wrap">
+                <ul class="sales__list col-6">
+                    <li class="sales__item sales__item_left sales__item_1">
+                        <h3 class="item__title item__title_1">Мальдивские острова</h3>
+                        <p class="item__price item__price_1">от 55 000</p>
+                        <a href="" class="item__link item__link_1">Подробнее</a>
+                    </li>
+                    
+                    <li class="sales__item sales__item_left sales__item_2">
+                        <h3 class="item__title item__title_2">Горящий тур на остров Крит</h3>
+                        <p class="item__price item__price_2">от 30 000</p>
+                        <a href="" class="item__link item__link_2">Подробнее</a>
+                    </li>
+                </ul>
+                <div class="col-6 sales__item sales__item_left sales__item_3">
                     <h3 class="item__title item__title_3">Номера категории люкс</h3>
                     <p class="item__price item__price_3">от 5 000</p>
                     <a href="" class="item__link item__link_3">Подробнее</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <section class="about-us container">
             <h2 class="title about-us__title">
@@ -103,42 +104,50 @@
             <h2 class="title services__title">
                 Услуги
             </h2>
-            <ul class="services__list">
-                <li class="services__elem services__elem_1">
-                    <a href="" class="services__link">
+            <ul class="d-flex flex-wrap">
+                <li class="col-xs-12 col-sm-12 col-md-6 d-flex">
+                    <div class=" services__elem services__elem_1">
+                        <a href="" class="services__link">
                         Эксклюзивное обслуживание 
                         <span class="pointer"></span>
                     </a>
                     <p class="services__text">
                         Равным образом постоянный количественный рост и сфера нашей активности
                     </p>
+                    </div>
                 </li>
-                <li class="services__elem services__elem_2">
-                    <a href="" class="services__link">
+                <li class="col-xs-12 col-sm-12 col-md-6 d-flex">
+                    <div class="services__elem services__elem_2">
+                        <a href="" class="services__link">
                         Аренда банкетных залов 
                     </a>
                     <span class="pointer"></span>
                     <p class="services__text">
                         Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
                     </p>
+                    </div>
                 </li>
-                <li class="services__elem services__elem_3">
-                    <a href="" class="services__link ">
+                <li class="col-xs-12 col-sm-12 col-md-6 d-flex">
+                    <div class="services__elem services__elem_3">
+                        <a href="" class="services__link ">
                         Сауны, бассейны, бани, фитнес-залы 
                     </a>
                     <span class="pointer"></span>
                     <p class="services__text">
                         Не следует, однако забывать, что начало повседневной работы по формированию позиции
                     </p>
+                    </div>
                 </li>
-                <li class="services__elem services__elem_4">
-                    <a href="" class="services__link ">
+                <li class="col-xs-12 col-sm-12 col-md-6 d-flex">
+                    <div class="services__elem services__elem_4">
+                        <a href="" class="services__link ">
                         Охраняемые автомобильные стоянки 
                     </a>
                     <span class="pointer"></span>
                     <p class="services__text">
                         Не следует, однако забывать, что начало повседневной работы по формированию позиции
                     </p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -146,44 +155,44 @@
             <h2 class="title services__title">
                 Преимущества
             </h2>
-            <ul class="plus__list">
-                <li class="plus__elem plus__elem_1">
+            <ul class="row d-flex flex-wrap plus__list">
+                <li class="col-xs-6 col-sm-4 col-md-3  plus__elem plus__elem_1">
                     <p class="plus__text">
                         Идейные соображения высшего порядка,
                         а также постоянный количественный рост
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_2">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_2">
                     <p class="plus__text">
                         Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_3">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_3">
                     <p class="plus__text">
                         Таким образом реализация плановых заданий играет важную роль для понимания
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_4">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_4">
                     <p class="plus__text">
                         Повседневная практика показывает, что сложившаяся структура организации
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_5">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_5">
                     <p class="plus__text">
                         Равным образом рамки и место обучения кадров способствует подготовки сотрудника
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_6">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_6">
                     <p class="plus__text">
                         Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_7">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_7">
                     <p class="plus__text">
                         Повседневная практика показывает, что дальнейшее развитие различных 
                     </p>
                 </li>
-                <li class="plus__elem plus__elem_8">
+                <li class="col-xs-6 col-sm-4 col-md-3 plus__elem plus__elem_8">
                     <p class="plus__text">
                         Значимость этого настолько очевидна, что консультация наших экспертов помогает
                     </p>
@@ -194,9 +203,10 @@
             <h2 class="title services__title">
                 Размещение
             </h2>
-            <ul class="hotels__list">
-                <li class="hotels__item hotels__item_1">
-                    <span class="hotels__text">
+            <ul class="d-flex flex-wrap row">
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_1">
+                        <span class="hotels__text">
                         <small class="hotels__small">
                             от
                         </small>
@@ -221,9 +231,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_2">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_2">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -248,9 +260,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_3">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_3">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -275,9 +289,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_4">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_4">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -302,9 +318,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_5">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_5">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -329,9 +347,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_6">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_6">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -356,9 +376,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_7">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_7">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -383,9 +405,11 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_8">
-                    <span>
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="hotels__item hotels__item_8">
+                        <span>
                         <small class="hotels__small">
                             от
                         </small>
@@ -410,8 +434,9 @@
                     <a href="" class="hotels__btn btn">
                         Номера
                     </a>
-                </li>
-                <li class="hotels__item hotels__item_other">
+
+                    </div>                </li>
+                <li class="col-xs-12 col-sm-6 col-md-4 hotels__item hotels__item_other">
                     <a href="" class="hotels__other-link">
                     </a>
                     <span class="hotels__other-text">Посмотреть все варианты</span>
@@ -552,5 +577,6 @@
 
         </div>
     </footer>
+<script src="/bootstrap.bundle.min.js"></script>
 </body>
 </html>

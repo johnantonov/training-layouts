@@ -210,14 +210,9 @@ p  {
 
 .sales {
     margin-bottom: 70px; 
-    display: flex;
-    flex-flow: column wrap;
 }
 
 .sales__list {
-    display: flex;
-    flex-flow: column wrap;
-    max-height: 600px;
 }
 
 .sales__item {
@@ -236,7 +231,7 @@ p  {
     margin-right: 24px;
     background: url(/img/maldiv.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -244,7 +239,7 @@ p  {
     margin-right: 24px;
     background: url(/img/krit.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 18px;
 }
 
@@ -253,7 +248,7 @@ p  {
     padding: 212px 229px 40px 45px;
     background: url(/img/lux.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .sales__item_1::after,
@@ -269,11 +264,12 @@ p  {
     left: 0;
     border-radius: 15px;
     opacity: 0.5;
+    pointer-events: none;
     
 }
 
 .item__title {
-    max-width: 350px;
+    max-width: 420px;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
@@ -331,29 +327,19 @@ p  {
     margin-bottom: 70px;
 }
 
-.services__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .services__elem {
-    flex: 1 1 45%;
     padding: 191px 126px 35px 45px;
     margin-bottom: 24px;
+    margin-right: 24px;
     border-radius: 15px 15px 15px 15px;
     background: #FFFFFF;
 
-}
-
-.services__elem:not(:nth-child(2n)) {
-    margin-right: 24px;
 }
 
 .services__elem_1 {
     background-image: url(../img/service1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .services__elem_2 {
@@ -405,8 +391,8 @@ p  {
 }
 
 .plus__list {
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: 24px;
+
 }
 
 .plus__elem {
@@ -427,7 +413,7 @@ p  {
     color: #000000;
 }
 
-.plus__elem:not(:nth-child(4n)) {
+.plus__elem {
     margin-right: 22px;
 }
 
@@ -504,7 +490,6 @@ p  {
 }
 
 .hotels__item {
-    flex: 1 1 30%;
     margin-bottom: 24px;
     padding: 45px;
     padding-top: 249px;
@@ -512,9 +497,9 @@ p  {
     border-radius: 15px;
 }
 
-.hotels__item:not(:nth-child(3n)) {
+/* .hotels__item:not(:nth-child(3n)) {
     margin-right: 24px;
-}
+} */
 
 .hotels__stars {
     display: inline;

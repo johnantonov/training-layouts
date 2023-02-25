@@ -1,3 +1,4 @@
+
 /* montserrat-regular - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -72,6 +73,12 @@ li {
     padding: 0 75px;
 }   
 
+.header__burger {
+    display: none;
+}
+
+
+
 .btn {
     display: inline-block;
     padding: 25px 39px;
@@ -82,6 +89,7 @@ li {
     font-size: 23px;
     line-height: 28px;
 }
+
 
 .btn:hover {
     background: #FFB84D
@@ -163,17 +171,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .header__search {
     padding: 0;
     margin: 0;
+    cursor: pointer;
     border: none;
     background: none;
 }
 
-/* .header__search:hover path {
-    stroke:#FF9900;
-} 
-
-.header__search:hover rect {
-    fill:#FF9900;
-}   */
+.header__search:hover {
+    background-color: #5b482d;
+}
 
 .header__search:focus {
     border: 2px solid #000000;
@@ -184,15 +189,39 @@ p, h1, h2, h3, h4, h5, h6 {
 } 
 
 
-
-.header__search:hover +  .search__active {display: block}
-
-
-.search__active {
+.form_no-active {
     display: none;
+
+}
+
+.form_is-active {
+    display: inline;
     margin-right: 14px;
     width: 412px;
+    color:#000;
     border-bottom:1px solid #CACACA;
+}
+
+.header__stop-search_no-active {
+    display: none;
+}
+
+.header__stop-search_is-active {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+
+.header__stop-search_is-active:hover rect {
+    fill: #FF9900
+}
+
+.header__stop-search_is-active:hover circle {
+    stroke: #FF9900
 }
 
 .search__question {
@@ -203,24 +232,56 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: #CACACA; 
+    color: #000; 
 }
 
 /* HERO */
 
 
 .hero {
+    position: relative;
+    margin-bottom: 50px;
+    
+    /* background: url(/img/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;    */
+}
+
+.swiper {
+    width: 100%;
+    height: 620px;
+}
+.hero__info {
     margin-bottom: 50px;
     padding: 100px 80px;
+    z-index: 1;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.slide_1 {
     background: url(/img/slide1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;   
 }
+
+.slide_2{
+    background: url(/img/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+
+.slide_3{
+    background: url(/img/slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+
 
 .hero__title {
     margin-bottom: 24px;
     max-width: 837px;
-    font-weight: 800;
     font-size: 70px;
     line-height: 85px;
     color: #FFFFFF;
@@ -351,12 +412,14 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #000000;
 }
 
-
 /* HOW WE WORK */
-
 
 .how {
     margin-bottom: 111px;
+}
+
+.how__img_768px {
+    display: none;
 }
 
 .how__title {
@@ -410,15 +473,48 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 18px;
 }
 
-.how__img {
+.how__img_1 {
+    background: url(/img/HowWeWork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 870px;
     margin-top: 10px;
     margin-left: 142px;
     border-radius: 32px;
-    background: url(/img/HowWeWork.jpg);
+}
+
+.how__img_2 {
+    background: url(/img/HowWeWork2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 870px;
+    margin-top: 10px;
+    margin-left: 142px;
+    border-radius: 32px;
 }
+
+.how__img_3 {
+    background: url(/img/HowWeWork3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 870px;
+    margin-top: 10px;
+    margin-left: 142px;
+    border-radius: 32px;
+}
+
+.how__img_4 {
+    background: url(/img/HowWeWork4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 870px;
+    margin-top: 10px;
+    margin-left: 142px;
+    border-radius: 32px;
+}
+
+
+
 
 .how__more {
     padding: 19px 36px;
@@ -460,9 +556,77 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+.how_no-active {
+    display: none;
+}
+
+.how_active {
+    display: block;
+}
+
+
 /* FAQ */
 
+.faq {
+    margin-bottom: 100px;   
+}
 
+.accordion__el {
+    border-bottom: 1px solid #CACACA;
+    padding: 30px 0
+}
+
+.accordion__el:first-child {
+    border-top: 1px solid #CACACA;
+}
+
+.accordion__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.accordion__el_close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__title {
+    margin-bottom: 32px;
+}
+
+
+.accordion__text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+}
+
+.accordion__text_hidden {
+    display: none;
+}
+
+
+.accordion__text_visible {
+    display: block;
+}
+
+.accordion__btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.btn__img {
+    pointer-events: none;
+}
+
+.btn__img_close {
+    pointer-events: none;
+}
 
 
 /* FOOTER */
@@ -590,8 +754,6 @@ textarea {
     background: #666666;
 }
 
-.form__elem:focus {}
-
 .form__elem:active {
     color:#FFFFFF
 }
@@ -599,19 +761,3 @@ textarea {
 
 
 
-
-.one {
-    margin: 100px auto;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-}
-
-.two {
-    margin: 100px auto;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-
-.one:hover ~ .two {background-color: red;}

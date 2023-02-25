@@ -43,7 +43,8 @@ html {
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 p {
@@ -82,6 +83,7 @@ ul {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -93,18 +95,38 @@ ul {
 }
 
 .header {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 110px;
     padding-bottom: 40px;
     padding-top: 40px;
 }
+
+.header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 110px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
 .border {
     border-bottom: 3px solid #e4e4e4;
 }
 
 .nav__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
@@ -176,12 +198,21 @@ ul {
 }
 
 .hero__btn-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .hero__ssl {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -194,7 +225,9 @@ ul {
     background-color: transparent;
     background-size: contain;
     margin-right: 8px;
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
 }
 
 .hero__background {
@@ -211,6 +244,7 @@ ul {
 
 
 .do {
+    margin-top: 60px;
     padding-bottom: 200px;
 }
 
@@ -223,25 +257,20 @@ ul {
     margin-bottom: 50px;
 }
 
-.do__list {
-    display: flex;
-
-}
-
-.do__card:not(:last-child) {
-    margin-right: 30px;
-}
-
-
 .do__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     padding: 60px 30px;
-    flex: 1 1 calc(25% - 30px);
     border: 1px solid #e4e4e4;
     border-radius: 5px;
     
 }
+
 
 .card__svg {
     margin: 0 auto;
@@ -270,8 +299,13 @@ ul {
 
 
 .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 160px;
     margin-top: 95px;
 }
@@ -284,21 +318,31 @@ ul {
 }
 
 .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .clients__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex: 1 1 33.33%;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 30px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30.33%;
+            flex: 1 1 30.33%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 35px;
     border-radius: 5px;
     border: 1px solid #d2d2d2;
-}
-
-.clients__card:not(:last-child) {
-    margin-right: 30px;
 }
 
 .clients__text {
@@ -312,8 +356,12 @@ ul {
 
 .clients__user {
     padding-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top: 1px solid #dadada;
 }
 
@@ -353,13 +401,20 @@ ul {
 }
 
 .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .contacts__elem {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: 190px;     
-    flex: 1 1 33.33%;
+    -webkit-box-flex: 1;     
+        -ms-flex: 1 1 33.33%;     
+            flex: 1 1 33.33%;
     max-width: 250px
 }
 
@@ -416,7 +471,6 @@ ul {
     background-size: auto 100%;
 }
 
-
 /* FORM */
 
 .form-section {
@@ -453,15 +507,25 @@ input {
 
 .footer {
     height: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 .footer__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;                
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;                
 }
 
 .footer__logo {
@@ -476,6 +540,8 @@ input {
 }
 
 .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -484,6 +550,8 @@ input {
 }
 
 .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -509,9 +577,17 @@ input {
 .card__title,
 .card__text,
 path {
+    -webkit-transition-property: color, fill, background-color, -webkit-transform;
+    transition-property: color, fill, background-color, -webkit-transform;
+    -o-transition-property: color, transform, fill, background-color;
     transition-property: color, transform, fill, background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
+    transition-property: color, transform, fill, background-color, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 } 
 
 *:focus {
@@ -524,7 +600,9 @@ path {
 
 
 .btn:hover {
-    transform: scale(110%);
+    -webkit-transform: scale(110%);
+        -ms-transform: scale(110%);
+            transform: scale(110%);
     color:#152c44
 }
 

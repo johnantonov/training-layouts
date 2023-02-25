@@ -1,0 +1,281 @@
+html {
+    font-family: 'Open Sans';
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    background: #e5e5e5;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* CUSTOM CHECKBOX */
+
+.cb {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox_fake {
+    display: inline-block;;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCB26E;
+    border-radius: 3px;
+}
+
+.checkbox:checked + .checkbox_fake {
+    background: url(/img/Rectangle\ 99.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.cb__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+
+
+/* CUSTOM SELECT */
+
+
+.custom-select {
+    margin-top: 50px;
+}
+
+.choices {
+    width: 176px;
+    height: 39px;
+    border-radius: 10px;
+}
+
+.choices__list {
+    padding: 0;
+}
+
+.choices__inner {
+    background: #FFFFFF;
+    border-radius: 10px !important
+}
+
+.choices__list--dropdown {
+    border-radius: 10px !important
+}
+
+.choices__item {
+    padding-top: 1px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+
+#choices--selCustom-item-choice-5 {
+    display: none;
+}
+
+.choices[data-type*=select-one]:after {
+    content: '';
+    width: 10px;
+    height: 10px; 
+    z-index: 1;
+    top: 40%;
+    left: 145px;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    transform:rotate(-45deg);
+
+}
+
+.choices[data-type*=select-one].is-open:after {
+    content: '';
+    width: 10px;
+    height: 10px; 
+    z-index: 1;
+    top: 65%;
+    left: 145px;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    transform:rotate(135.5deg);
+    transition: transform 0.4s linear;
+}
+
+
+
+/* YANDEX MAP */
+
+
+#map {
+    margin-top: 50px;
+}
+
+
+/* CUSTOM SCROLL */
+
+.simplebar-content-wrapper {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+  }
+
+  .simplebar-content-wrapper::-webkit-scrollbar,
+  .simplebar-hide-scrollbar::-webkit-scrollbar {
+    display: initial;
+    width: initial;
+    height: initial;
+  }
+
+.custom-scroll {
+    margin-top: 100px;
+    width: 399px;
+    max-height: 310px;
+    border: 10px solid #FFFFFF;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333333
+}
+
+.scroll__text {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.simplebar-scrollbar {
+    background: #CCB26E;
+    border-radius: 5px;
+}
+
+
+/* VALID INVALID FORM */
+
+
+.valid {
+    margin-top: 20px;
+    padding: 38px 30px;
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.form__input {
+    margin-bottom: 31px;
+    width: 380px;
+    padding: 24px 20px;
+    background: #FFFFFF;
+    border: 1px solid #FF5C00;
+    border-radius: 10px;
+    color: #000
+}
+
+.valid__input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    
+}
+
+
+.submit {
+    width: 50%;
+    padding: 18.5px 53px;
+    background: #FF5C00;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+label {
+    position: relative;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+}
+
+/* TOOLTIP */
+
+#myButton {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    background-color: red;
+}
+
+.some-text {
+    width: 268px;
+    padding: 20px 78px 20px 29px;
+    background: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333333;
+}
+
+
+
+.help:hover svg path {
+    fill: #CCB26E
+}
+
+.help:hover:before {
+    display: block;
+}
+
+.help {
+    position: relative;
+}
+
+.help:before {
+    display: none;
+    top: -40px;
+    left: -60px;
+    position: absolute;
+    width: 163px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    background-color:#666666;
+    opacity: 1;
+    content: 'Глава 2, страница 176';
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    
+
+}
